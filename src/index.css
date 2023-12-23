@@ -468,6 +468,16 @@ header .cart span{
   text-transform: uppercase;
 
 }
+/*-------------------NOT FOUND*/
+.notFound{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #1a202c;
+}
 
 /*-------------------MEDIA QUERYS*/
 @media only screen and (max-width: 1000px){

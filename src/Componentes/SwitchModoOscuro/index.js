@@ -13,7 +13,7 @@ export const SwitchModoOscuro = ({ darkMode, toggleDarkMode }) => {
       <label className="custom-switch-label" htmlFor="darkSwitch">
         <div className="moon-icon">
           <box-icon name="moon"></box-icon>
-        </div>
+        </div>Modo Oscuro
         <div className="custom-switch-inner"></div>
         <div className="custom-switch-switch"></div>
       </label>

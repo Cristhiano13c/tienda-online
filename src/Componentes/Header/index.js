@@ -2,6 +2,7 @@ import React, { useContext, useState, useEffect } from "react";
 import Nike from "../../images/Nike.jpg";
 import { Link } from "react-router-dom";
 import { DataContext } from "../../contexto/DataProvider";
+import {SwitchModoOscuro} from "../SwitchModoOscuro";
 
 export const Header = () => {
     const value = useContext(DataContext);
@@ -39,22 +40,7 @@ export const Header = () => {
                 <li><Link to="#">Contacto</Link></li>
                 <li><Link to="#">Login / Registro</Link></li>
             </ul>
-            <div className="custom-switch">
-                <input
-                    type="checkbox"
-                    className="custom-switch-input"
-                    id="darkSwitch"
-                    onChange={toggleDarkMode}
-                    checked={darkMode}
-                />
-                <label className="custom-switch-label" htmlFor="darkSwitch">
-                    <div className="moon-icon">
-                        <box-icon name="moon"></box-icon>
-                    </div>
-                    <div className="custom-switch-inner"></div>
-                    <div className="custom-switch-switch"></div>
-                </label>
-            </div>
+            <SwitchModoOscuro darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
             <div className="cart" onClick={menuToggle}>
                 <box-icon name="cart"></box-icon>
                 <span className="item__total">{carrito.length}</span>

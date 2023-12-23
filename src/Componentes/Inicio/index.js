@@ -9,9 +9,9 @@ export const Inicio = () => {
                 <h1 className="title">Inicio</h1>
             </Link>
             <Link to="/productos">
-            <h1 className="title">Productos</h1>
+                <h1 className="title">Productos</h1>
             </Link>
-            <img src={Portada} alt="portada" width="100%"/>
+            <img src={Portada} alt="portada" width="100%" />
         </div>
     );
 }

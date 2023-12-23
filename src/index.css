@@ -486,7 +486,61 @@ header .cart span{
   align-items: center;
   color: #1a202c;
 }
-
+/* -------------------CARRITO*/
+.formulario{
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 5rem 0;
+  box-sizing: border-box;
+}
+.formulario h2{
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 0.1rem;
+  padding-top: 10rem;
+  color: #08a05c;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.formulario p {
+  margin-bottom: 10px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 32px;
+}
+.formulario .label{
+  margin-bottom: 10px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 25px;
+  color: #08a05c;
+}
+.formulario .btn{
+  width: 100%;
+  display: inline-block;
+  padding: .3rem 1rem;
+  font-size: 1.2rem;
+  background-color: #4439a7;
+  border: 0;
+  border-radius: 5px;
+  outline: 0;
+  cursor: pointer;
+  height: 75px;
+}
+.formulario .btn:hover{
+  background-color: #034e2c;
+  color: white;
+}
+.formulario .input{
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #08a05c;
+  border-radius: 5px;
+  outline: 0;
+  font-size: 1.2rem;
+}
 /*-------------------MEDIA QUERYS*/
 @media only screen and (max-width: 1000px){
   .carrito_item{

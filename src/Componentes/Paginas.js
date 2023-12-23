@@ -4,7 +4,7 @@ import {Inicio} from "./Inicio";
 import {ProductosLista} from "./Productos/index";
 import {ProductosDetalle} from "./Productos/ProductosDetalle";
 import {NotFound} from "../views/NotFound";
-import {Contacto} from "./Contacto/index";
+import Contacto from "./Contacto/index";
 
 export const Paginas = () => {
   return (

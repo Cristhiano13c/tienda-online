@@ -455,6 +455,14 @@ header .cart span{
   color: #30333a;
 
 }
+.descripcion {
+  margin-top: 20px; /* Ajusta el margen superior según sea necesario */
+  line-height: 1.5; /* Espaciado entre líneas */
+}
+
+.descripcion p {
+  margin-bottom: 10px; /* Ajusta el margen inferior del párrafo según sea necesario */
+}
 
 /*-------------------RELACIONADOS*/
 .relacionado{

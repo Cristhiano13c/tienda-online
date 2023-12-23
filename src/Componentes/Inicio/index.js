@@ -5,7 +5,7 @@ import useRedirection from "../../hooks/useRedirection";
 
 
 export const Inicio = () => {
-    useRedirection("/productos", 3000); // Redireccionamos a la vista de restaurantes en 3 segundos
+    useRedirection("/productos", 3000);
     return (
         <div className="inicio">
             <Link to={"/"}>

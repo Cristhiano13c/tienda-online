@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
-import Card from "../../images/img03.jpg";
 import { DataContext } from "../../contexto/DataProvider";
+import { useCarrito } from "../../hooks/useCarrito";
 
 export const Carrito = () => {
     const value = useContext(DataContext);
@@ -8,41 +8,14 @@ export const Carrito = () => {
     const [carrito, setCarrito] = value.carrito;
     const [total] = value.total;
 
+    const { resta, suma, removeProducto } = useCarrito();
+
     const toggleFalse = () => {
         setMenu(false);
     }
     const show1 = menu ? "carritos show" : "carritos";
     const show2 = menu ? "carrito show" : "carrito";
 
-    const resta = (id) => {
-        carrito.forEach(item => {
-            if (item.id === id) {
-                item.cantidad === 1 ? item.cantidad = 1 : item.cantidad -= 1;
-            }
-            setCarrito([...carrito])
-        }
-        )
-    }
-    const suma = (id) => {
-        carrito.forEach(item => {
-            if (item.id === id) {
-                item.cantidad += 1;
-            }
-            setCarrito([...carrito])
-        }
-        )
-    }
-    const removeProducto = (id) => {
-        if (window.confirm("¿Quieres eliminar este producto?")) {
-            carrito.forEach((item, index) => {
-                if (item.id === id) {
-                    item.cantidad = 1;
-                    carrito.splice(index, 1)
-                }
-            })
-            setCarrito([...carrito])
-        }
-    }
     return (
         <div className={show1}>
             <div className={show2}>

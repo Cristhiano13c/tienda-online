@@ -7,15 +7,8 @@ export const Landing = () => {
 
     return (
         <div className="landing">
-                <Link to={"/restaurants"}> {/* Añadimos un enlace a la vista de restaurantes */}
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
+                <Link to={"/productos"}> {/* Añadimos un enlace a la vista de restaurantes */}
+
                     <h1>Bienvenidos a Nuestro Delivery</h1>
                 </Link>
                 <span className="laser-pointer"></span> {/* Puntero láser original */}

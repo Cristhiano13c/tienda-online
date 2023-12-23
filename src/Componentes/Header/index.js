@@ -37,8 +37,7 @@ export const Header = () => {
             <ul>
                 <li><Link to="/">Inicio</Link></li>
                 <li><Link to="/productos">Productos</Link></li>
-                <li><Link to="#">Contacto</Link></li>
-                <li><Link to="#">Login / Registro</Link></li>
+                <li><Link to="/contacto">Contacto</Link></li>
             </ul>
             <SwitchModoOscuro darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
             <div className="cart" onClick={menuToggle}>

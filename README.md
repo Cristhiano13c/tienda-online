@@ -11,5 +11,4 @@ ejecutar de forma local
 **npm start**
 
 Enlace de vercel
-https://tienda-virtual-delta.vercel.app/
-
+https://tienda-online-silk.vercel.app/

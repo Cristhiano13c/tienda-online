@@ -1,11 +1,11 @@
 import React from "react";
 import { Routes,Route } from "react-router-dom";
-import {Inicio} from "./Inicio";
-import {ProductosLista} from "./Productos/index";
-import {ProductosDetalle} from "./Productos/ProductosDetalle";
+import {Inicio} from "../views/Inicio";
+import {ProductosLista} from "../Componentes/Productos/index";
+import {ProductosDetalle} from "../Componentes/Productos/ProductosDetalle";
 import {NotFound} from "../views/NotFound";
 
-export const Paginas = () => {
+export const TiendaRouter = () => {
   return (
     <section>
         <Routes>

@@ -19,16 +19,16 @@ export const Carrito = () => {
     return (
         <div className={show1}>
             <div className={show2}>
-                <div className="carrito_close" onClick={toggleFalse}>
+                <div className="carrito__close" onClick={toggleFalse}>
                     <box-icon name="x"></box-icon>
                 </div>
                 <h2>Su Carrito</h2>
-                <div className="carrito_center">
+                <div className="carrito__center">
                     {
                         carrito.length === 0 ? <h2 style={{ textAlign: "center" }}>Carrito Vacio</h2> : <>
                             {
                                 carrito.map(producto => (
-                                    <div className="carrito_item" key={producto.id}>
+                                    <div className="carrito__item" key={producto.id}>
                                         <img src={producto.image} alt="Carrito" />
                                         <div>
                                             <h3>{producto.title}</h3>
@@ -49,7 +49,7 @@ export const Carrito = () => {
                     }
                 </div>
 
-                <div className="carrito_footer">
+                <div className="carrito__footer">
                     <h3>Total: ${total}</h3>
                     <button className="btn">Pagar</button>
                 </div>

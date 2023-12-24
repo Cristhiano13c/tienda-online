@@ -2,7 +2,8 @@ import React, { useContext, useState, useEffect } from "react";
 import { DataContext } from "../../contexto/DataProvider";
 import { useParams } from "react-router-dom";
 import { ProductoItem } from "./ProductoItem";
-import SizeSelector from "../SizeSelector"; // Importa el componente SizeSelector
+import SizeSelector from "../SizeSelector"; 
+import AddToCartButton from "../AddToCartButton";
 
 
 
@@ -55,7 +56,7 @@ export const ProductosDetalle = () => {
                             <SizeSelector />
                         </div>
                     </div>
-                    <button onClick={() => addCarrito(detalle.id)} className="btn">Add to Cart</button>
+                    <AddToCartButton productId={detalle.id} />
                     {
                         url ? <img src={images} alt={detalle.title} /> : <img src={detalle.image} alt={detalle.title} />
                     }

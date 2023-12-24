@@ -16,15 +16,15 @@ export const Header = () => {
 
     // Función para alternar el modo oscuro
     const toggleDarkMode = () => {
-        document.body.classList.toggle("dark-mode");
+        document.body.classList.toggle("dark__mode");
         setDarkMode(!darkMode);
     };
     // Efecto para aplicar el modo oscuro al cargar la página
     useEffect(() => {
         if (darkMode) {
-            document.body.classList.add("dark-mode");
+            document.body.classList.add("dark__mode");
         } else {
-            document.body.classList.remove("dark-mode");
+            document.body.classList.remove("dark__mode");
         }
     }, [darkMode]);
     return (

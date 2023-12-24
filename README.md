@@ -1,8 +1,9 @@
 #Pasos para la instalación
 Clonar el repositorio
 Descargar los paquetes
-**npm install
 
+**npm install
+**
 No se instalaron paquetes externos 
 
 ejecutar de forma local
